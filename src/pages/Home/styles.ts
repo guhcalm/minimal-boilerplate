@@ -12,11 +12,7 @@ export default styled.div`
 `
 
 export const Button = styled.div`
-  background-image: radial-gradient(
-    circle at 100% 50%,
-    blue 0%,
-    transparent 80%
-  );
+  background-image: radial-gradient(circle at 100% 50%, blue, transparent 85%);
   width: 100px;
   height: 100px;
   border-radius: 0 100% 100% 0 / 0 50% 50% 0;
