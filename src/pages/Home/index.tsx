@@ -3,5 +3,5 @@ import Container from "./styles"
 
 export default () => {
   const { id } = useParams()
-  return <Container data-home>Home Page {id}</Container>
+  return <Container data-home="">Home Page {id}</Container>
 }

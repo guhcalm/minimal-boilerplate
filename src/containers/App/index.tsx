@@ -5,7 +5,7 @@ import Container from "./styles"
 export default ({ children }: { children: ReactNode }) => {
   const { state } = useCustomContext()
   return (
-    <Container data-app palette={state.theme.palette}>
+    <Container data-app="" palette={state.theme.palette}>
       {children}
     </Container>
   )
