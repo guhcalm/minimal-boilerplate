@@ -7,7 +7,8 @@ export default () => {
   const { id } = useParams()
   const { dispatch, actions } = useCustomContext()
   useEffect(() => {
-    dispatch(actions.setLightTheme())
+    dispatch(actions.switchTheme())
+    dispatch(actions.switchTheme())
   }, [])
   return (
     <Container data-home="">

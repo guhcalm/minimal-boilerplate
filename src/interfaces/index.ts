@@ -25,6 +25,5 @@ export interface StateInterface {
 }
 
 export enum ActionsEnum {
-  SET_LIGHT_THEME = "setLightTheme",
-  SET_DARK_THEME = "setDarkTheme"
+  SWITCH_THEME
 }

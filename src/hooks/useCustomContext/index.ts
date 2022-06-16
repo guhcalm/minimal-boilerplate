@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { StateContext, actions } from "../../context"
+import { StateContext, dispatchers } from "../../context"
 import { StateInterface } from "../../interfaces"
 
 export default () => {
@@ -7,6 +7,6 @@ export default () => {
   return {
     state: state as StateInterface,
     dispatch,
-    actions
+    actions: dispatchers
   }
 }
