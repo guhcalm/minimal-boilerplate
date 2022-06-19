@@ -1,20 +1,18 @@
-import { ActionsEnum, ThemesEnum } from "../../interfaces"
+import { ActionsEnum, StateInterface, ThemesEnum } from "../../interfaces"
 import { ThemesStyles } from "../../styles"
 
-const meta = document.querySelector("[name='theme-color']") as HTMLMetaElement
-meta.content = ThemesStyles.Dark.palette.background.main
-const { Light, Dark } = ThemesStyles
 const { LIGHT, DARK } = ThemesEnum
 const { SWITCH_THEME } = ActionsEnum
+const { Light, Dark } = ThemesStyles
 
 export default {
   dispatchers: {
     switchTheme: () => ({ type: SWITCH_THEME })
   },
-  reducers: {
-    [SWITCH_THEME]: state => ({
+  reducers: (state: StateInterface, action: { payload: any }) => ({
+    [SWITCH_THEME]: () => ({
       ...state,
       theme: state.theme.name === DARK ? Light : Dark
     })
-  }
+  })
 }
