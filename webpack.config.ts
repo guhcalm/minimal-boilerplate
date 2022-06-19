@@ -22,8 +22,7 @@ export default ({ WEBPACK_BUILD }) => ({
         output: {
           assetModuleFilename: "assets/[name].[contenthash][ext][query]",
           filename: "assets/[name].[contenthash].js",
-          clean: true,
-          publicPath: "/"
+          clean: true
         },
         optimization: {
           splitChunks: {
@@ -42,14 +41,10 @@ export default ({ WEBPACK_BUILD }) => ({
     : {
         mode: "development",
         devtool: "inline-source-map",
-        output: {
-          publicPath: "/"
-        },
         devServer: {
           port: 3000,
           open: false,
-          hot: true,
-          historyApiFallback: true
+          hot: true
         }
       })
 })
