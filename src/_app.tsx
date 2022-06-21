@@ -1,5 +1,3 @@
-import { App } from "./containers"
+import { Layout } from "./components"
 
-const MyApp = () => <App>Hello World</App>
-
-export default MyApp
+export const MyApp = () => <Layout>Hello World</Layout>

@@ -1,9 +1,9 @@
 import { ActionsEnum, StateInterface, ThemesEnum } from "../../interfaces"
-import { ThemesStyles } from "../../styles"
+import { Themes } from "../../styles"
 
 const { LIGHT, DARK } = ThemesEnum
 const { SWITCH_THEME } = ActionsEnum
-const { Light, Dark } = ThemesStyles
+const { Light, Dark } = Themes
 
 export default {
   dispatchers: {

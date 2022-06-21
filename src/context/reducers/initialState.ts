@@ -1,4 +1,4 @@
 import { StateInterface } from "../../interfaces"
-import { ThemesStyles } from "../../styles"
+import { Themes } from "../../styles"
 
-export default { theme: ThemesStyles.Light } as StateInterface
+export default { theme: Themes.Light } as StateInterface
